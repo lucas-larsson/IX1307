@@ -1,0 +1,1128 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     45894,       1120]
+NotebookOptionsPosition[     33035,        867]
+NotebookOutlinePosition[     38860,       1020]
+CellTagsIndexPosition[     38817,       1017]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "Inl\[ADoubleDot]mningsuppgift 1: ",
+ StyleBox["Probleml\[ODoubleDot]sning",
+  ShowAutoSpellCheck->False,
+  IgnoreSpellCheck->False]
+}], "Title",
+ CellChangeTimes->{{3.7020153964718504`*^9, 3.7020154137888494`*^9}, {
+  3.7020187055516243`*^9, 3.702018707376836*^9}, {3.7020187962933407`*^9, 
+  3.702018807026209*^9}, {3.702028657458463*^9, 3.702028661202487*^9}, {
+  3.7138557439761114`*^9, 3.7138557473281765`*^9}, {3.7142150972176886`*^9, 
+  3.7142151033173275`*^9}, {3.714469411215145*^9, 3.7144694161162024`*^9}, {
+  3.715329735007349*^9, 
+  3.715329765074149*^9}},ExpressionUUID->"5dd42a29-b108-42b8-a983-\
+272c56fbe4ae"],
+
+Cell["\<\
+IX1307 Probleml\[ODoubleDot]sning i Matematik, Inl\[ADoubleDot]mningsuppgift \
+1a, HT2020\
+\>", "Text",
+ CellChangeTimes->{{3.7020154181727023`*^9, 3.702015485349305*^9}, {
+  3.702018373706297*^9, 3.7020183951408343`*^9}, {3.713855750898515*^9, 
+  3.71385575269148*^9}, {3.713857023417962*^9, 3.713857043318161*^9}, {
+  3.7153297711788473`*^9, 3.715329798276104*^9}, {3.7465248748692837`*^9, 
+  3.7465248754308877`*^9}, {3.777364100205673*^9, 3.777364100698245*^9}, {
+  3.8090043226334257`*^9, 
+  3.809004323952324*^9}},ExpressionUUID->"4420f9b9-89aa-40b0-814f-\
+f6521d0140e1"],
+
+Cell["Notebook mall", "Text",
+ CellChangeTimes->{{3.7144696818091335`*^9, 3.7144697304580574`*^9}, {
+  3.7148066846045275`*^9, 3.714806694635456*^9}, {3.7151514219853077`*^9, 
+  3.715151422749323*^9}, {3.715765028781269*^9, 3.715765043243774*^9}, {
+  3.715765269570201*^9, 3.715765289171832*^9}, {3.809063696670648*^9, 
+  3.809063697222547*^9}},ExpressionUUID->"7f90ee8d-a9a3-4b2f-af60-\
+fc324654d6b6"],
+
+Cell[CellGroupData[{
+
+Cell["1. Inledning", "Section",
+ CellChangeTimes->{{3.7020184038300905`*^9, 3.70201842407902*^9}, {
+  3.7020184851846113`*^9, 
+  3.702018495496278*^9}},ExpressionUUID->"e4b39142-0dad-41ef-960b-\
+169deebefa25"],
+
+Cell["\<\
+Denna uppgift g\[ARing]r ut p\[ARing] att l\[ODoubleDot]sa ett antal \
+matematiska problem med hj\[ADoubleDot]lp av Mathematica och skriva en kort \
+rapport direkt i en egen Notebook. Rapporten skall, f\[ODoubleDot]r varje \
+uppgift, beskriva: problemet, figur, ange namn p\[ARing] variabler, l\
+\[ODoubleDot]sningen till problemet inklusive resonemang och sedan diskutera \
+resultatet. Ni ska sedan granska varandras uppgifter j\[ADoubleDot]mf\
+\[ODoubleDot]ra l\[ODoubleDot]sningar.\
+\>", "Text",
+ CellChangeTimes->{{3.702018497539891*^9, 3.7020186901387253`*^9}, {
+   3.702018821284701*^9, 3.702018877008258*^9}, {3.702028567956807*^9, 
+   3.7020285796568823`*^9}, {3.7020286860690465`*^9, 
+   3.7020287048515673`*^9}, {3.702028770709833*^9, 3.702028818711341*^9}, {
+   3.7144697463284607`*^9, 3.71446982660649*^9}, {3.71488469803307*^9, 
+   3.714884801847557*^9}, {3.715068567796733*^9, 3.715068633296742*^9}, {
+   3.7151514363586082`*^9, 3.715151491180505*^9}, {3.715252505892714*^9, 
+   3.715252545584469*^9}, {3.715329898759055*^9, 3.715329905726322*^9}, {
+   3.715330216955336*^9, 3.7153304750915194`*^9}, {3.7156732877793837`*^9, 
+   3.7156733517596188`*^9}, {3.715673697222378*^9, 3.7156737085105257`*^9}, {
+   3.715763665385912*^9, 3.715763696166573*^9}, 3.715764392100154*^9, {
+   3.715764491450489*^9, 3.7157645180849*^9}, {3.715839253505949*^9, 
+   3.7158392672990923`*^9}, {3.808887963778844*^9, 
+   3.808887995540379*^9}},ExpressionUUID->"3a836114-ccb6-4a37-8573-\
+a3ad145ef385"],
+
+Cell["\<\
+Plagiering \[ADoubleDot]r inte till\[ARing]ten, och k\[ADoubleDot]llor m\
+\[ARing]ste anges n\[ADoubleDot]r ni refererar till annat material. L\
+\[ADoubleDot]mna in b\[ARing]de en pdf-fil och notebook-filen i Canvas. \
+Pdf-filen beh\[ODoubleDot]vs f\[ODoubleDot]r plagiatkontroll, d\[ARing] *.nb \
+inte \[ADoubleDot]r accepeterad i URKUND.\
+\>", "Text",
+ CellChangeTimes->{{3.7157637142259417`*^9, 3.715763768895667*^9}, {
+   3.715766506105855*^9, 3.71576653478861*^9}, {3.7158392885327377`*^9, 
+   3.7158393297448177`*^9}, 
+   3.746524931653648*^9},ExpressionUUID->"d7aca567-d0f7-43ff-ae55-\
+1a59104f21e3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2. Nyttiga funktioner i Mathematica", "Section",
+ CellChangeTimes->{{3.715673742655837*^9, 3.715673767719419*^9}, {
+   3.715763928470994*^9, 3.71576393043186*^9}, 3.7157644557285643`*^9, 
+   3.715765418836591*^9, 
+   3.715765470782443*^9},ExpressionUUID->"2fb3e62c-d7df-472c-ac97-\
+71f4b3c93d50"],
+
+Cell[TextData[{
+ "H\[ADoubleDot]r \[ADoubleDot]r en kort beskrivning av n\[ARing]gra \
+funktioner som kan vara nyttiga att k\[ADoubleDot]nna till f\[ODoubleDot]r \
+att l\[ODoubleDot]sa problemen nedan. F\[ODoubleDot]r mer information om \
+funktionerna se ",
+ StyleBox["Wolfram Documentation",
+  FontSlant->"Italic"],
+ " under hj\[ADoubleDot]lp-menyn."
+}], "Text",
+ CellChangeTimes->{{3.715766600040471*^9, 3.715766604828458*^9}, {
+  3.715839480617943*^9, 3.715839558908186*^9}, {3.715839710785677*^9, 
+  3.7158397306980133`*^9}, {3.715843108829137*^9, 3.715843210961628*^9}, {
+  3.746524954788596*^9, 
+  3.7465249577214155`*^9}},ExpressionUUID->"c073ea3d-47ac-43c1-a121-\
+90d6338a6f3a"],
+
+Cell[CellGroupData[{
+
+Cell["Ekvationer och Olikheter", "Subsubsection",
+ CellChangeTimes->{{3.746525646982625*^9, 3.7465256782462254`*^9}, {
+  3.746525908350701*^9, 
+  3.746525910643915*^9}},ExpressionUUID->"90ed16b5-88cb-4b32-ab30-\
+6dd3612ae191"],
+
+Cell[TextData[{
+ "Studera f\[ODoubleDot]ljande hj\[ADoubleDot]lpfiler i Wolfram \
+Documentation: \n",
+ Cell[BoxData[
+  TemplateBox[{"\"tutorial/Equations\"","paclet:tutorial/Equations"},
+   "HyperlinkPaclet"]],
+  CellChangeTimes->{{3.7773665817024603`*^9, 3.777366601007915*^9}, 
+    3.777366633833558*^9, 3.777366669173398*^9},ExpressionUUID->
+  "f0e57289-9255-4984-ab6f-2ac42fcc1dc9"],
+ "\n",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"tutorial/SolvingEquations\"","paclet:tutorial/SolvingEquations"},
+   "HyperlinkPaclet"]],
+  CellChangeTimes->{{3.7773665817024603`*^9, 3.777366601007915*^9}, 
+    3.777366633833558*^9},ExpressionUUID->
+  "a059b7cc-5264-4b9a-9036-701fa0ac1cc0"],
+ "\nTa reda p\[ARing] hur kommandona ",
+ StyleBox["Solve, Reduce",
+  FontFamily->"Courier",
+  FontWeight->"Regular"],
+ ", och ",
+ StyleBox["Eliminate",
+  FontFamily->"Courier",
+  FontWeight->"Regular"],
+ " fungerar.\nTitta sedan n\[ADoubleDot]rmare p\[ARing] ",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"tutorial/Inequalities-ManipulatingEquationsAndInequalities\"",
+    "paclet:tutorial/Inequalities-ManipulatingEquationsAndInequalities"},
+   "HyperlinkPaclet"]],
+  CellChangeTimes->{3.77736684793034*^9, 3.777367313148632*^9, 
+   3.777367348064959*^9},ExpressionUUID->
+  "f1a06bd7-ade5-4bd7-bc17-56f9f2c8aa70"],
+ "\nf\[ODoubleDot]r hur man l\[ODoubleDot]ser olikheter och ekvationer med \
+absolutbelopp.\n\nExempelvis f\[ODoubleDot]r att l\[ODoubleDot]sa ekvationen ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"|", 
+     RowBox[{"x", "-", "4"}], "|"}], "=", "4"}], TraditionalForm]],
+  ExpressionUUID->"60eee464-4cad-443b-beca-d623ffbd1c93"],
+ " kan man anv\[ADoubleDot]nda funktionen ",
+ StyleBox["Reduce",
+  FontFamily->"Courier",
+  FontWeight->"Regular"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.7465257010535717`*^9, 3.7465257013811736`*^9}, {
+   3.746525740210823*^9, 3.7465257567157283`*^9}, {3.746803868256475*^9, 
+   3.746803884829536*^9}, {3.746803937683666*^9, 3.746804007008232*^9}, {
+   3.746804044062748*^9, 3.7468041037757273`*^9}, 3.74680451467868*^9, {
+   3.7773665716245127`*^9, 3.7773666075309877`*^9}, {3.7773666395262814`*^9, 
+   3.77736672947875*^9}, {3.777366765935482*^9, 3.777366781155673*^9}, {
+   3.777367367367391*^9, 
+   3.777367406929721*^9}},ExpressionUUID->"c15a9d5a-52d4-4f4d-8815-\
+9acf1ad87275"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Abs", "[", 
+     RowBox[{"x", "-", "4"}], "]"}], "\[Equal]", "4"}], ",", " ", "x", ",", 
+   " ", "Reals"}], "]"}]], "Input",
+ CellChangeTimes->{{3.746804154785128*^9, 3.746804166217684*^9}, {
+  3.7468044250994787`*^9, 
+  3.746804426174553*^9}},ExpressionUUID->"65454c08-1a1b-480d-8864-\
+570fc2adecac"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", "\[Equal]", "0"}], "||", 
+  RowBox[{"x", "\[Equal]", "8"}]}]], "Output",
+ CellChangeTimes->{3.746804167246153*^9, 
+  3.746804428331038*^9},ExpressionUUID->"6466b2ef-f748-4c74-99f2-\
+5c5eab471b8e"]
+}, Open  ]],
+
+Cell["\<\
+Reals talar om vilken typ av tal som avses f\[ODoubleDot]r x. \
+Dom\[ADoubleDot]nen kan vara Heltal (Integers), Reella tal (Reals) eller \
+Komplexa tal (Complex).\
+\>", "Text",
+ CellChangeTimes->{{3.74680443940938*^9, 
+  3.74680450285184*^9}},ExpressionUUID->"cd3bbae0-addd-4534-9177-\
+f25418286691"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Komplexa tal", "Subsubsection",
+ CellChangeTimes->{{3.715843847433463*^9, 
+  3.71584385448273*^9}},ExpressionUUID->"7f34a6e6-b2ef-45c3-a290-\
+220c1b0cb0d8"],
+
+Cell["\<\
+Den imagin\[ADoubleDot]ra enheten representeras av ett versalt I i \
+Mathematica.\
+\>", "Text",
+ CellChangeTimes->{{3.715764649562131*^9, 3.715764655512229*^9}, {
+  3.715765120002322*^9, 3.7157651257480583`*^9}, {3.715843865382493*^9, 
+  3.715843918264797*^9}, {3.71584620062523*^9, 
+  3.715846202880443*^9}},ExpressionUUID->"9e433eb9-320f-4e9e-bf5c-\
+baa3f5bf9e14"],
+
+Cell[BoxData[
+ RowBox[{"I", "*", "I"}]], "Input",
+ CellChangeTimes->{{3.7158439205547857`*^9, 
+  3.715843922998678*^9}},ExpressionUUID->"3435c479-fbb0-4dfd-895f-\
+3c968e9ddab1"],
+
+Cell["Roten av ett negativt tal :", "Text",
+ CellChangeTimes->{{3.7158462130761147`*^9, 
+  3.7158462357184143`*^9}},ExpressionUUID->"9274eaf0-7fe3-4daf-8a63-\
+5c53204c8c3f"],
+
+Cell[BoxData[
+ RowBox[{"Sqrt", "[", 
+  RowBox[{"-", "4"}], "]"}]], "Input",
+ CellChangeTimes->{{3.715843928582464*^9, 3.715843931419338*^9}, 
+   3.7158441762616673`*^9},ExpressionUUID->"9d51a383-60bf-42cc-9c63-\
+423292c08a61"],
+
+Cell["Algebra med komplexa tal fungera som vanligt:", "Text",
+ CellChangeTimes->{{3.715843951031124*^9, 3.7158439903065233`*^9}, 
+   3.715846240492097*^9},ExpressionUUID->"c26d620f-0a71-49e9-a286-\
+7b6ad7dd77b7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"4", "+", 
+    RowBox[{"3", " ", "I"}]}], ")"}], "/", 
+  RowBox[{"(", 
+   RowBox[{"2", "-", "I"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.7158439942277946`*^9, 3.715844035089801*^9}, {
+   3.7158440947616577`*^9, 3.715844096494886*^9}, 
+   3.715844231108266*^9},ExpressionUUID->"c0162814-ff6a-40fe-b9ce-\
+d6314b3acbee"],
+
+Cell[BoxData[
+ RowBox[{"z1", "=", 
+  RowBox[{"Exp", "[", 
+   RowBox[{"2", "+", 
+    RowBox[{"9", " ", "I"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.715844311265896*^9, 3.715844316663904*^9}},
+ CellID->16941,ExpressionUUID->"1b7fbe8f-81cb-46d0-9c1f-fc69bbdedb38"],
+
+Cell[TextData[{
+ "Funktionen N kan anv\[ADoubleDot]ndas f\[ODoubleDot]r att \
+ber\[ADoubleDot]kna numeriska n\[ADoubleDot]rmev\[ADoubleDot]rde av \
+exempelvis ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["z", "1"], TraditionalForm]],ExpressionUUID->
+  "b401c7b0-1d47-4030-9fce-cf7516dca9ee"]
+}], "Text",
+ CellChangeTimes->{{3.715844349344708*^9, 3.715844363537199*^9}, {
+  3.7158462473977137`*^9, 
+  3.7158462709125223`*^9}},ExpressionUUID->"a5014372-1c8d-4202-a3c5-\
+a2e1b54c3ec5"],
+
+Cell[BoxData[
+ RowBox[{"N", "[", "z1", "]"}]], "Input",
+ CellChangeTimes->{{3.715844322445518*^9, 
+  3.715844326176012*^9}},ExpressionUUID->"24092434-a466-41ce-b38a-\
+ea2a4c8d491e"],
+
+Cell["eller av andra tal. H\[ADoubleDot]r \[ADoubleDot]r Pi med 50 siffrors \
+noggranhet:", "Text",
+ CellChangeTimes->{{3.7158462771591187`*^9, 3.715846295489477*^9}, {
+  3.7158463319486713`*^9, 
+  3.715846335461727*^9}},ExpressionUUID->"aaa50d2a-cd29-4bc8-a71b-\
+17789c13506d"],
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"Pi", ",", " ", "50"}], "]"}]], "Input",
+ CellChangeTimes->{{3.715846297747003*^9, 
+  3.715846329398109*^9}},ExpressionUUID->"e42818e4-cbac-4a31-ba37-\
+85b181141443"],
+
+Cell["\<\
+Olika funktioner kan sedan anv\[ADoubleDot]ndas f\[ODoubleDot]r att \
+manipulera komplexa tal:\
+\>", "Text",
+ CellChangeTimes->{{3.715844265499601*^9, 3.715844279548379*^9}, {
+  3.715844373480256*^9, 
+  3.715844385490307*^9}},ExpressionUUID->"0b05cf26-33a6-4672-befc-\
+345460853df8"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"z2", "=", 
+   RowBox[{"4", "+", 
+    RowBox[{"3", "I"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.715844387512124*^9, 
+  3.715844396537387*^9}},ExpressionUUID->"98e2bda2-ba22-4c17-b459-\
+17e5fa66d89d"],
+
+Cell["Realdel:", "Text",
+ CellChangeTimes->{{3.715846347948187*^9, 
+  3.715846354148397*^9}},ExpressionUUID->"af322ac9-1385-4954-ac5f-\
+662d6b8707c9"],
+
+Cell[BoxData[
+ RowBox[{"Re", "[", "z2", "]"}]], "Input",
+ CellChangeTimes->{{3.71584440064002*^9, 
+  3.715844406013918*^9}},ExpressionUUID->"0ef7c8b9-8cd1-4b14-97fa-\
+7e7a2245cade"],
+
+Cell["Imagin\[ADoubleDot]rdel", "Text",
+ CellChangeTimes->{{3.715846367744523*^9, 
+  3.715846374435388*^9}},ExpressionUUID->"a9e5025b-f011-4545-88b2-\
+f6049f70078f"],
+
+Cell[BoxData[
+ RowBox[{"Im", "[", "z2", "]"}]], "Input",
+ CellChangeTimes->{{3.7158444096399*^9, 
+  3.715844412909709*^9}},ExpressionUUID->"3900b768-6658-4c0b-8c2f-\
+6bb7e3566825"],
+
+Cell[TextData[{
+ "Komplexa konjugatet till ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["z", "2"], TraditionalForm]],ExpressionUUID->
+  "6e3685f1-cbcf-4ca6-9f0b-1711728488ba"]
+}], "Text",
+ CellChangeTimes->{{3.7158463773240557`*^9, 
+  3.715846391891356*^9}},ExpressionUUID->"4ee997ee-229b-4a97-a33e-\
+71b28ea4895e"],
+
+Cell[BoxData[
+ RowBox[{"Conjugate", "[", "z2", "]"}]], "Input",
+ CellChangeTimes->{{3.715844432532568*^9, 
+  3.715844439554348*^9}},ExpressionUUID->"8c31cc3d-22ce-49f8-8b79-\
+c94c68b6637f"],
+
+Cell[TextData[{
+ "och till ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["z", "1"], TraditionalForm]],ExpressionUUID->
+  "bbc8ed01-ed09-4d2f-9946-91c4e214f76c"]
+}], "Text",
+ CellChangeTimes->{{3.7158463973069563`*^9, 
+  3.715846407327126*^9}},ExpressionUUID->"c1744e15-9424-4256-a5b2-\
+13653ec5fbd6"],
+
+Cell[BoxData[
+ RowBox[{"Conjugate", "[", "z1", "]"}]], "Input",
+ CellChangeTimes->{{3.715844417538631*^9, 
+  3.715844423972039*^9}},ExpressionUUID->"a7b17f16-defc-4af8-b6ce-\
+34530b315f0b"],
+
+Cell[TextData[{
+ "Absolutbeloppet till ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["z", "2"], TraditionalForm]],ExpressionUUID->
+  "797591c7-7cdb-4b5e-ac2d-5c23e275c609"]
+}], "Text",
+ CellChangeTimes->{{3.7158464125254593`*^9, 
+  3.7158464298170357`*^9}},ExpressionUUID->"5fb8a9eb-f788-40e2-95cf-\
+fb3e9ac049c9"],
+
+Cell[BoxData[
+ RowBox[{"Abs", "[", "z2", "]"}]], "Input",
+ CellChangeTimes->{{3.715844461969926*^9, 
+  3.715844469709404*^9}},ExpressionUUID->"d83da956-85c0-4c20-bb57-\
+d8f3969224e0"],
+
+Cell[TextData[{
+ "Argumentet till ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["z", "1"], TraditionalForm]],ExpressionUUID->
+  "d4ee401b-1554-4938-90bf-fad9d2105b81"]
+}], "Text",
+ CellChangeTimes->{{3.715846432272941*^9, 
+  3.715846444856063*^9}},ExpressionUUID->"4a5d538d-ce22-4c97-b63c-\
+25739ca424a7"],
+
+Cell[BoxData[
+ RowBox[{"Arg", "[", "z2", "]"}]], "Input",
+ CellChangeTimes->{{3.715844487108686*^9, 
+  3.715844510454564*^9}},ExpressionUUID->"1582a313-1079-462b-a14d-\
+efbebaeef427"],
+
+Cell["\<\
+F\[ODoubleDot]r att grafiskt representera komplexa talplanet \
+anv\[ADoubleDot]nds ListPlot. Vi b\[ODoubleDot]rjar med att skapa en lista av \
+talen:\
+\>", "Text",
+ CellChangeTimes->{{3.715844524941486*^9, 3.715844563362453*^9}, {
+  3.7158446685903463`*^9, 
+  3.7158446793219213`*^9}},ExpressionUUID->"3629bde8-4f8c-4b02-82ad-\
+540fe0697419"],
+
+Cell[BoxData[
+ RowBox[{"cn", "=", 
+  RowBox[{"{", 
+   RowBox[{"z1", ",", " ", 
+    RowBox[{"Conjugate", "[", "z1", "]"}], ",", " ", "z2", ",", " ", 
+    RowBox[{"Conjugate", "[", "z2", "]"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.715844596544832*^9, 3.71584465301479*^9}, {
+  3.715844839634321*^9, 
+  3.71584484678485*^9}},ExpressionUUID->"acbab22a-5f74-45f8-8f6b-\
+41646536c448"],
+
+Cell["\<\
+Sedan kan listan av tal konverteras till en list av talpar {realdel, imagin\
+\[ADoubleDot]rdel}\
+\>", "Text",
+ CellChangeTimes->{{3.715844682346939*^9, 3.715844727750986*^9}, {
+  3.715844786945964*^9, 3.715844801925559*^9}, {3.715846454936261*^9, 
+  3.715846490607765*^9}},ExpressionUUID->"8900ccf0-10c8-4c6a-be68-\
+4ef47485426a"],
+
+Cell[BoxData[
+ RowBox[{"pp", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Re", "[", 
+       RowBox[{"cn", "[", 
+        RowBox[{"[", "i", "]"}], "]"}], "]"}], ",", " ", 
+      RowBox[{"Im", "[", 
+       RowBox[{"cn", "[", 
+        RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", " ", "1", ",", " ", "4"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.715844809887739*^9, 
+  3.715844891771496*^9}},ExpressionUUID->"872f8c14-e93a-4ba1-99e9-\
+345065df6f89"],
+
+Cell["H\[ADoubleDot]r \[ADoubleDot]r en de komplexa talen ritade i det \
+komplexa talplanet:", "Text",
+ CellChangeTimes->{{3.715846508062621*^9, 
+  3.715846548377713*^9}},ExpressionUUID->"c37f75a2-a5bb-4a3c-9a96-\
+ee9f0a7b2206"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"pp", ",", " ", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Re\>\"", ",", " ", "\"\<Im\>\""}], "}"}]}], ",", " ", 
+   RowBox[{"AspectRatio", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PlotMarkers", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Automatic", ",", " ", "Medium"}], "}"}]}], ",", 
+   RowBox[{"Epilog", "\[Rule]", 
+    RowBox[{"{", " ", 
+     RowBox[{
+      RowBox[{"EdgeForm", "[", "Red", "]"}], ",", 
+      RowBox[{"FaceForm", "[", "]"}], ",", 
+      RowBox[{"Rectangle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"pp", "[", 
+           RowBox[{"[", 
+            RowBox[{"3", ",", "1"}], "]"}], "]"}], ",", " ", 
+          RowBox[{"pp", "[", 
+           RowBox[{"[", 
+            RowBox[{"3", ",", "2"}], "]"}], "]"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"pp", "[", 
+           RowBox[{"[", 
+            RowBox[{"2", ",", " ", "1"}], "]"}], "]"}], ",", " ", 
+          RowBox[{"pp", "[", 
+           RowBox[{"[", 
+            RowBox[{"2", ",", " ", "2"}], "]"}], "]"}]}], "}"}]}], "]"}], 
+      ","}], " ", "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.715844565973502*^9, 3.715844593091008*^9}, {
+  3.715844896839059*^9, 3.715845082755004*^9}, {3.71584516214052*^9, 
+  3.7158451851926947`*^9}, {3.71584524757872*^9, 3.715845316497096*^9}, {
+  3.715845501389512*^9, 3.715845582154271*^9}, {3.715845665156043*^9, 
+  3.715845668867689*^9}, {3.7158457552103977`*^9, 3.715845762575938*^9}, {
+  3.715845981671982*^9, 
+  3.7158459990060263`*^9}},ExpressionUUID->"0a8d299d-1a3e-47ea-a30a-\
+7fbb1cdb9a5e"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Summor", "Subsubsection",
+ CellChangeTimes->{{3.715843828709401*^9, 
+  3.715843858589096*^9}},ExpressionUUID->"066fa43c-8306-4f19-9ff1-\
+767dbfff003f"],
+
+Cell["\<\
+Sum anv\[ADoubleDot]nds f\[ODoubleDot]r att en serie, dvs en summa av en talf\
+\[ODoubleDot]ljd. Om det finns ett utryck f\[ODoubleDot]r varje element i \
+serien kan den skrivas enligt:\
+\>", "Text",
+ CellChangeTimes->{{3.715764457843378*^9, 3.7157644696702213`*^9}, 
+   3.7157646610646763`*^9, {3.715839734486442*^9, 3.715839750667802*^9}, {
+   3.715839844170637*^9, 3.71583987442966*^9}, {3.7158399068034887`*^9, 
+   3.715839913992141*^9}, {3.715843235814555*^9, 3.715843246578535*^9}, {
+   3.715843370143797*^9, 3.715843384420014*^9}, {3.777367470471435*^9, 
+   3.777367520246969*^9}, {3.777367649573448*^9, 
+   3.777367665103231*^9}},ExpressionUUID->"b1a29ebf-fe5f-4ef4-b298-\
+7a0ea0271fbf"],
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{"n", "^", "2"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", " ", "1", ",", " ", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.71584340216663*^9, 
+  3.715843412707539*^9}},ExpressionUUID->"c7467f30-c227-4294-952f-\
+b4cc52eaad52"],
+
+Cell[TextData[{
+ "I detta fall serien f\[ODoubleDot]r talf\[ODoubleDot]ljden ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["n", "2"], TraditionalForm]],ExpressionUUID->
+  "78f67e42-0b2b-4587-96bd-21797a9fdc61"],
+ " d\[ADoubleDot]r ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "\[Element]", 
+    RowBox[{"[", 
+     RowBox[{"1", ",", " ", "10"}], "]"}]}], TraditionalForm]],
+  ExpressionUUID->"8f865c5c-895c-48d8-a496-d84f352a30bb"],
+ ".\nOm man vill summera de 100 f\[ODoubleDot]rsta primtalen s\[ARing] kan \
+man anv\[ADoubleDot]nda funktionen Prime. F\[ODoubleDot]r att best\
+\[ADoubleDot]mma det 10:e primtalet kan man anv\[ADoubleDot]nda"
+}], "Text",
+ CellChangeTimes->{{3.715843420010742*^9, 3.7158434417705603`*^9}, {
+  3.7158435646127653`*^9, 3.7158435959267387`*^9}, {3.715843702131679*^9, 
+  3.715843711800891*^9}, {3.777367673983659*^9, 
+  3.777367785952841*^9}},ExpressionUUID->"f70d7963-6f79-4d97-aedc-\
+21b26f66f3b4"],
+
+Cell[BoxData[
+ RowBox[{"Prime", "[", "10", "]"}]], "Input",
+ CellChangeTimes->{{3.7158434435314074`*^9, 3.715843469444663*^9}, {
+  3.715843544823598*^9, 3.715843556920843*^9}, {3.7158437148336973`*^9, 
+  3.715843719221181*^9}},ExpressionUUID->"f9787a08-1108-43fa-b060-\
+215909f36da2"],
+
+Cell["\<\
+Funktionen Sum kan d\[ARing] anv\[ADoubleDot]ndas f\[ODoubleDot]r att ber\
+\[ADoubleDot]kna serien av de 100 f\[ODoubleDot]rsta primtalen. \
+\>", "Text",
+ CellChangeTimes->{{3.715843645188981*^9, 3.715843675439077*^9}, {
+  3.7158437308043013`*^9, 3.715843756602915*^9}, {3.715843786919327*^9, 
+  3.715843787146652*^9}, {3.7773678001716843`*^9, 
+  3.7773678033150597`*^9}},ExpressionUUID->"4d0b6c45-9d62-4989-912d-\
+d8ffd662bc64"],
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{"Prime", "[", "i", "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", " ", "1", ",", " ", "100"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.715843677122118*^9, 3.715843691450094*^9}, {
+  3.7158437599921103`*^9, 
+  3.715843768655075*^9}},ExpressionUUID->"fd9c50be-efb6-4042-956d-\
+296ec8207179"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Logik", "Subsubsection",
+ CellChangeTimes->{{3.715843828709401*^9, 3.715843858589096*^9}, {
+  3.809004882614492*^9, 
+  3.8090048865183268`*^9}},ExpressionUUID->"400a91c4-e24b-445a-87c4-\
+4f6fa33efb60"],
+
+Cell[TextData[{
+ "Denna sida inneh\[ARing]ller information om hur Logik fungerar i \
+Mathematica: ",
+ Cell[BoxData[
+  TemplateBox[{
+   "\"Logic & Boolean Algebra\"","paclet:guide/LogicAndBooleanAlgebra"},
+   "HyperlinkPaclet"]],
+  CellChangeTimes->{3.809005794870988*^9, 3.809005860328496*^9, 
+   3.809005916710747*^9},ExpressionUUID->
+  "b9c84033-73f9-4698-97a5-ded2c369f407"],
+ ". Titta speciellt p\[ARing] \[OpenCurlyDoubleQuote]Tutorials\
+\[CloseCurlyDoubleQuote] l\[ADoubleDot]ngst ner p\[ARing] sidan."
+}], "Text",
+ CellChangeTimes->{{3.715764457843378*^9, 3.7157644696702213`*^9}, 
+   3.7157646610646763`*^9, {3.715839734486442*^9, 3.715839750667802*^9}, {
+   3.715839844170637*^9, 3.71583987442966*^9}, {3.7158399068034887`*^9, 
+   3.715839913992141*^9}, {3.715843235814555*^9, 3.715843246578535*^9}, {
+   3.715843370143797*^9, 3.715843384420014*^9}, {3.777367470471435*^9, 
+   3.777367520246969*^9}, {3.777367649573448*^9, 3.777367665103231*^9}, {
+   3.809005332993327*^9, 3.8090054372993307`*^9}, {3.8090055411003*^9, 
+   3.809005550632312*^9}, {3.809005581111125*^9, 3.809005581115096*^9}, 
+   3.809005612241906*^9, {3.809005657156107*^9, 3.809005673559023*^9}, 
+   3.8090058000209007`*^9, {3.809005932919656*^9, 
+   3.809005981327293*^9}},ExpressionUUID->"b3a67a41-a60e-4f4a-b0fb-\
+5712d0abbd2a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Hyperlink", "[", 
+  RowBox[{
+  "\"\<Lists as Sets\>\"", ",", "\"\<paclet:tutorial/ListsAsSets\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8090057540753813`*^9, 3.809005792452324*^9}, {
+  3.8090058568989983`*^9, 3.809005913985805*^9}, {3.809006035040015*^9, 
+  3.809006046186164*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"1f9567f4-2475-4fbb-8814-2623a49c9f13"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Lists as Sets\"","paclet:tutorial/ListsAsSets"},
+  "HyperlinkPaclet"]], "Output",
+ CellChangeTimes->{
+  3.809005794870988*^9, 3.809005860328496*^9, 3.809005916710747*^9, {
+   3.809006037459112*^9, 3.80900604849889*^9}},
+ CellLabel->"Out[76]=",ExpressionUUID->"75321967-b492-46a1-9fa2-cbc548a4ebc9"]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["M\[ADoubleDot]ngdl\[ADoubleDot]ra", "Subsubsection",
+ CellChangeTimes->{{3.715843828709401*^9, 3.715843858589096*^9}, {
+  3.809004882614492*^9, 3.8090048865183268`*^9}, {3.809005000796929*^9, 
+  3.809005002700878*^9}},ExpressionUUID->"66cfdada-0737-4279-936d-\
+b1ae14a458a8"],
+
+Cell[TextData[{
+ "P\[ARing] f\[ODoubleDot]ljande sida finns en instruktion om hur Mathematica \
+kan hantera enkla m\[ADoubleDot]ngdoperationer: ",
+ Cell[BoxData[
+  TemplateBox[{"\"Lists as Sets\"","paclet:tutorial/ListsAsSets"},
+   "HyperlinkPaclet"]],
+  CellChangeTimes->{
+   3.809005794870988*^9, 3.809005860328496*^9, 3.809005916710747*^9, {
+    3.809006037459112*^9, 3.80900604849889*^9}},ExpressionUUID->
+  "f6b78d9f-276a-4351-b41f-cbf823882541"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.715764457843378*^9, 3.7157644696702213`*^9}, 
+   3.7157646610646763`*^9, {3.715839734486442*^9, 3.715839750667802*^9}, {
+   3.715839844170637*^9, 3.71583987442966*^9}, {3.7158399068034887`*^9, 
+   3.715839913992141*^9}, {3.715843235814555*^9, 3.715843246578535*^9}, {
+   3.715843370143797*^9, 3.715843384420014*^9}, {3.777367470471435*^9, 
+   3.777367520246969*^9}, {3.777367649573448*^9, 3.777367665103231*^9}, 
+   3.809005992034162*^9, {3.8090060662818117`*^9, 
+   3.8090061224526577`*^9}},ExpressionUUID->"2e205182-4c9a-4e73-87e5-\
+3fb7616d0637"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["3. Problem", "Section",
+ CellChangeTimes->{{3.7020290614845037`*^9, 3.702029109657613*^9}, {
+   3.7144712855796633`*^9, 3.714471292524208*^9}, {3.715329864760683*^9, 
+   3.715329890969419*^9}, 3.715673739602861*^9, 3.7156737700725822`*^9, 
+   3.7157654142394247`*^9, 
+   3.715765472816592*^9},ExpressionUUID->"b3b34a52-c2c9-4bd0-bf72-\
+c573ccc37e37"],
+
+Cell["\<\
+L\[ODoubleDot]s nedanst\[ARing]ende problem. Problemets l\[ODoubleDot]sning \
+och resultat skall inneh\[ARing]lla visualisering d\[ADoubleDot]r det \
+\[ADoubleDot]r relevant.\
+\>", "Text",
+ CellChangeTimes->{{3.715763938647009*^9, 3.715763949738159*^9}, {
+  3.715764384327914*^9, 
+  3.71576438472368*^9}},ExpressionUUID->"85d833ea-34ff-4fd0-b2c4-\
+a12502dddfc5"],
+
+Cell[CellGroupData[{
+
+Cell["Polynomekvation", "Subsection",
+ CellChangeTimes->{{3.715763839710208*^9, 3.7157638461483927`*^9}, {
+  3.715763900686981*^9, 
+  3.715763904719805*^9}},ExpressionUUID->"00571e6e-5a97-41fd-be1b-\
+0b52bd61f89e"],
+
+Cell[TextData[{
+ "Hitta l\[ODoubleDot]sningarna till polynomekvationen: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["x", "5"], "+", 
+     RowBox[{
+      FractionBox["23", "3"], 
+      SuperscriptBox["x", "4"]}], "+", 
+     RowBox[{
+      FractionBox["25", "3"], 
+      SuperscriptBox["x", "3"]}], "-", 
+     RowBox[{
+      FractionBox["107", "3"], 
+      SuperscriptBox["x", "2"]}], "-", 
+     RowBox[{
+      FractionBox["148", "3"], "x"}], "+", "20"}], "=", "0"}], 
+   TraditionalForm]],ExpressionUUID->"540bd970-3d81-42bf-8fd0-9ab6a6b89548"],
+ ". \nRita ocks\[ARing] grafen f\[ODoubleDot]r polynomet och markera nollst\
+\[ADoubleDot]llen med en r\[ODoubleDot]d punkt."
+}], "Text",
+ CellChangeTimes->{{3.7157639568619967`*^9, 3.715763957166376*^9}, {
+  3.715763987444283*^9, 3.7157639985571938`*^9}, {3.715764086915781*^9, 
+  3.715764089381732*^9}, {3.715764239422283*^9, 3.7157643630818977`*^9}, {
+  3.7465250382345314`*^9, 3.746525074551564*^9}, {3.7773645089432983`*^9, 
+  3.777364603387451*^9}, {3.8090546480036488`*^9, 
+  3.809054755536751*^9}},ExpressionUUID->"01fdb4ca-caf9-4857-9c7c-\
+9e7ef494ff86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Olikhet", "Subsection",
+ CellChangeTimes->{{3.715763865281136*^9, 3.7157638763265877`*^9}, {
+  3.777364788582761*^9, 3.7773647898175983`*^9}, {3.777365714891405*^9, 
+  3.777365721099682*^9}, {3.809006176975231*^9, 
+  3.8090061818311357`*^9}},ExpressionUUID->"499b3e97-9acb-4ce9-998b-\
+168c3ff9f590"],
+
+Cell["\<\
+L\[ODoubleDot]s uppgift 9 och 10 i filen Algebraiska likheter och olikheter \
+med hj\[ADoubleDot]lp av Mathematica. I de fall det \[ADoubleDot]r l\
+\[ADoubleDot]mpligt illustrera l\[ODoubleDot]sningsomr\[ARing]det grafiskt.\
+\>", "Text",
+ CellChangeTimes->{{3.715765252908642*^9, 3.715765262668253*^9}, {
+  3.7157653041522903`*^9, 3.715765401116889*^9}, {3.746525277995468*^9, 
+  3.746525289882745*^9}, {3.7773648000726147`*^9, 3.7773648238262777`*^9}, {
+  3.777365691131125*^9, 3.777365712771319*^9}, {3.8090620823914547`*^9, 
+  3.809062084336722*^9}, {3.809062251655343*^9, 3.809062253327609*^9}, {
+  3.8090623062782717`*^9, 3.8090623530435677`*^9}, {3.809064911389308*^9, 
+  3.8090649157818108`*^9}},ExpressionUUID->"c5618480-d3d1-4a2e-b8bb-\
+482ce6f8dd10"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Binomisk ekvation", "Subsection",
+ CellChangeTimes->{{3.715763851590728*^9, 3.715763859532757*^9}, 
+   3.715763909422714*^9},ExpressionUUID->"98acc623-28a8-49d7-9db7-\
+b037bb228c73"],
+
+Cell[TextData[{
+ "Finn l\[ODoubleDot]sningen till ekvationen ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["z", "6"], "=", 
+    RowBox[{
+     RowBox[{"-", "3"}], "+", 
+     RowBox[{"3", "i"}]}]}], TraditionalForm]],ExpressionUUID->
+  "b1b8202f-ad9e-44f0-8f45-4a8a50431ccb"],
+ " och visa grafiskt att dessa ligger p\[ARing] en cirkel i komplexa \
+talplanet."
+}], "Text",
+ CellChangeTimes->{{3.715764547208206*^9, 3.7157645475864487`*^9}, {
+  3.715764610184979*^9, 3.71576464631489*^9}, {3.715764676347335*^9, 
+  3.715764699710945*^9}, {3.715765014840446*^9, 3.7157650152492933`*^9}, {
+  3.777365752067191*^9, 3.7773657574225063`*^9}, {3.809006200054594*^9, 
+  3.809006204003459*^9}, {3.809062409417233*^9, 
+  3.809062412024239*^9}},ExpressionUUID->"2474e334-50be-4841-8085-\
+28cab83b338d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Logik", "Subsection",
+ CellChangeTimes->{{3.715763851590728*^9, 3.715763859532757*^9}, 
+   3.715763909422714*^9, {3.8090065134169683`*^9, 3.809006520160202*^9}, 
+   3.809007375237731*^9},ExpressionUUID->"15e8759b-761e-4c4c-abdf-\
+93c412dfbe55"],
+
+Cell["L\[ODoubleDot]s uppgift 1b  i filen Logik med hj\[ADoubleDot]lp av \
+Mathematica. ", "Text",
+ CellChangeTimes->{{3.715764547208206*^9, 3.7157645475864487`*^9}, {
+  3.715764610184979*^9, 3.71576464631489*^9}, {3.715764676347335*^9, 
+  3.715764699710945*^9}, {3.715765014840446*^9, 3.7157650152492933`*^9}, {
+  3.777365752067191*^9, 3.7773657574225063`*^9}, {3.809006200054594*^9, 
+  3.809006204003459*^9}, {3.809006523481963*^9, 3.809006562638648*^9}, {
+  3.8090073503869543`*^9, 3.809007352045446*^9}, {3.8090662897049427`*^9, 
+  3.809066313211362*^9}},ExpressionUUID->"38732133-164c-4c00-9720-\
+16f3313d542f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ekvationsl\[ODoubleDot]sning och grafer", "Subsection",
+ CellChangeTimes->{{3.715763851590728*^9, 3.715763859532757*^9}, 
+   3.715763909422714*^9, {3.8090065134169683`*^9, 3.809006520160202*^9}, {
+   3.809007361623749*^9, 3.809007370128124*^9}, {3.8090624646805077`*^9, 
+   3.809062471930871*^9}},ExpressionUUID->"132b9d4c-109d-414c-a9c3-\
+c3a177f91454"],
+
+Cell["\<\
+En D\[CloseCurlyQuote]Artagnan jagas av Richeliue. B\[ARing]da rider \
+s\[ARing] snabbt de kan. D\[CloseCurlyQuote]Artagnan rider med en hastighet \
+av 42 km/h och Richeliue med 57 km/h. Richeliue \[ADoubleDot]r 60 meter efter \
+D\[CloseCurlyQuote]Artagnan och det \[ADoubleDot]r 250 meter till stadsporten \
+d\[ADoubleDot]r D\[CloseCurlyQuote]Artagnan kan komma undan. \
+Best\[ADoubleDot]m om Richeliue hinner i kapp D\[CloseCurlyQuote]Artagnan och \
+i s\[ARing] fall vilken tidpunkt och str\[ADoubleDot]cka innan stadsporten \
+det sker. Illustrera tidsf\[ODoubleDot]rloppet grafiskt p\[ARing] l\
+\[ADoubleDot]mpligt s\[ADoubleDot]tt.\
+\>", "Text",
+ CellChangeTimes->{{3.715764547208206*^9, 3.7157645475864487`*^9}, {
+  3.715764610184979*^9, 3.71576464631489*^9}, {3.715764676347335*^9, 
+  3.715764699710945*^9}, {3.715765014840446*^9, 3.7157650152492933`*^9}, {
+  3.777365752067191*^9, 3.7773657574225063`*^9}, {3.809006200054594*^9, 
+  3.809006204003459*^9}, {3.809006523481963*^9, 3.809006562638648*^9}, {
+  3.8090073503869543`*^9, 3.809007352045446*^9}, {3.809062478320486*^9, 
+  3.809062710477311*^9}, {3.809062979558084*^9, 3.809062998324419*^9}, {
+  3.8090630569216413`*^9, 3.809063153229581*^9}, {3.809063235762435*^9, 
+  3.8090633632559853`*^9}, {3.809063532847032*^9, 
+  3.809063595900028*^9}},ExpressionUUID->"e10c51a4-70b1-4992-a98d-\
+11da85414118"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{967, 693},
+WindowMargins->{{Automatic, -1586}, {-282, Automatic}},
+TrackCellChangeTimes->True,
+ShowAutoSpellCheck->False,
+SpellingDictionaries->{"CorrectWords"->{"\[CapitalODoubleDot]vningsexempel"}},
+Magnification:>1.25 Inherited,
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell["Modify the definitions below to change the default appearance of all \
+cells in a given style. \nMake modifications to any definition using commands \
+in the Format menu.", "Text"], 
+   Cell[
+    CellGroupData[{
+      Cell["Notebook Options Settings", "Section"], 
+      Cell[
+       StyleData["Notebook"], ShowCellBracket -> Automatic]}, Closed]], 
+   Cell[
+    CellGroupData[{
+      Cell["Styles for Title and Section Cells", "Section"], 
+      Cell[
+       CellGroupData[{
+         Cell["Title", "Subsection"], 
+         Cell[
+          StyleData["Title"], FontFamily -> "Arial", FontSize -> 36, 
+          FontWeight -> "Bold", FontColor -> GrayLevel[0.5]], 
+         Cell[
+          StyleData["Subtitle"], FontFamily -> "Arial", FontWeight -> "Bold"], 
+         Cell[
+          StyleData["Subsubtitle"], FontFamily -> "Arial", FontSize -> 18]}, 
+        Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell["Section", "Subsection"], 
+         Cell[
+          StyleData["Section"], CellDingbat -> None, ShowGroupOpener -> True, 
+          FontFamily -> "Arial", FontSize -> 24, FontWeight -> "Bold", 
+          FontColor -> GrayLevel[0.5]], 
+         Cell[
+          StyleData["Subsection"], CellDingbat -> None, ShowGroupOpener -> 
+          True, FontFamily -> "Arial", FontSize -> 18, FontWeight -> "Bold", 
+          FontColor -> GrayLevel[0.3]], 
+         Cell[
+          StyleData["Subsubsection"], CellDingbat -> None, ShowGroupOpener -> 
+          True, FontFamily -> "Arial", FontSize -> 16, FontWeight -> "Bold", 
+          FontColor -> GrayLevel[0.]], 
+         Cell[
+          StyleData["Subsubsubsection"], CellDingbat -> None, ShowGroupOpener -> 
+          True, MenuSortingValue -> 1400, FontSize -> 14, FontWeight -> 
+          "Plain", FontSlant -> "Italic", FontColor -> GrayLevel[0]]}, 
+        Closed]]}, Closed]], 
+   Cell[
+    CellGroupData[{
+      Cell["Styles for Body Text", "Section"], 
+      Cell[
+       CellGroupData[{
+         Cell["Standard", "Subsection"], 
+         Cell[
+          StyleData["Text"], FontFamily -> "Times"], 
+         Cell[
+          StyleData["SmallText"], MenuSortingValue -> 1425, FontFamily -> 
+          "Times"]}, Closed]], 
+      Cell[
+       CellGroupData[{
+         Cell["Display", "Subsection"], 
+         Cell[
+          CellGroupData[{
+            Cell["Lists", "Subsubsection"], 
+            Cell[
+             StyleData["Item"], CellDingbat -> 
+             StyleBox["\[FilledCircle]", Alignment -> Baseline, 
+               GrayLevel[0.3]], FontFamily -> "Times"], 
+            Cell[
+             StyleData["ItemParagraph"], FontFamily -> "Times"], 
+            Cell[
+             StyleData["Subitem"], CellDingbat -> 
+             StyleBox["\[FilledSmallCircle]", Alignment -> Baseline, 
+               GrayLevel[0.3]], FontFamily -> "Times"], 
+            Cell[
+             StyleData["SubitemParagraph"], FontFamily -> "Times"], 
+            Cell[
+             StyleData["Subsubitem"], CellDingbat -> 
+             StyleBox["\[FilledSmallCircle]", Alignment -> Baseline, 
+               GrayLevel[0.5]], FontFamily -> "Times"], 
+            Cell[
+             StyleData["SubsubitemParagraph"], FontFamily -> "Times"], 
+            Cell[
+             StyleData["ItemNumbered"], FontFamily -> "Times"], 
+            Cell[
+             StyleData["SubitemNumbered"], FontFamily -> "Times"], 
+            Cell[
+             StyleData["SubsubitemNumbered"], FontFamily -> "Times"]}, 
+           Closed]], 
+         Cell[
+          CellGroupData[{
+            Cell["Templates", "Subsubsection"], 
+            Cell[
+             StyleData[
+             "SideCaptionArray", StyleDefinitions -> StyleData["Text"]], 
+             GridBoxOptions -> {
+              GridBoxAlignment -> {"Columns" -> {Left}, "Rows" -> {Center}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}}], 
+            Cell[
+             StyleData[
+             "SideCaption", StyleDefinitions -> StyleData["SmallText"]]]}, 
+           Closed]]}, Closed]]}, Closed]], 
+   Cell[
+    CellGroupData[{
+      Cell["Styles for Input and Output Cells", "Section"], 
+      Cell[
+       StyleData["Input"], ShowCellBracket -> True], 
+      Cell[
+       StyleData["InputOnly"], ShowCellBracket -> True], 
+      Cell[
+       StyleData["Code"], ShowCellBracket -> True], 
+      Cell[
+       StyleData["Output"], ShowCellBracket -> True], 
+      Cell[
+       StyleData["Message"], ShowCellBracket -> True], 
+      Cell[
+       StyleData["Print"], ShowCellBracket -> True]}, Closed]], 
+   Cell[
+    CellGroupData[{
+      Cell["Styles for Formulas and Programming", "Section"], 
+      Cell[
+       StyleData["InlineFormula"]], 
+      Cell[
+       StyleData["DisplayFormula"], FontFamily -> "Times"], 
+      Cell[
+       StyleData["DisplayFormulaNumbered"], FontFamily -> "Times"], 
+      Cell[
+       StyleData["Program"], ShowCellBracket -> True]}, Closed]], 
+   Cell[
+    CellGroupData[{
+      Cell["Citation Styles", "Section"], 
+      Cell[
+       StyleData["Reference"]]}, Closed]]}, Visible -> False, FrontEndVersion -> 
+  "11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, 2018)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 643, 13, 102, "Title",ExpressionUUID->"5dd42a29-b108-42b8-a983-272c56fbe4ae"],
+Cell[1225, 37, 587, 11, 39, "Text",ExpressionUUID->"4420f9b9-89aa-40b0-814f-f6521d0140e1"],
+Cell[1815, 50, 402, 6, 39, "Text",ExpressionUUID->"7f90ee8d-a9a3-4b2f-af60-fc324654d6b6"],
+Cell[CellGroupData[{
+Cell[2242, 60, 209, 4, 74, "Section",ExpressionUUID->"e4b39142-0dad-41ef-960b-169deebefa25"],
+Cell[2454, 66, 1505, 23, 111, "Text",ExpressionUUID->"3a836114-ccb6-4a37-8573-a3ad145ef385"],
+Cell[3962, 91, 617, 11, 63, "Text",ExpressionUUID->"d7aca567-d0f7-43ff-ae55-1a59104f21e3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4616, 107, 302, 5, 74, "Section",ExpressionUUID->"2fb3e62c-d7df-472c-ac97-71f4b3c93d50"],
+Cell[4921, 114, 686, 14, 63, "Text",ExpressionUUID->"c073ea3d-47ac-43c1-a121-90d6338a6f3a"],
+Cell[CellGroupData[{
+Cell[5632, 132, 226, 4, 49, "Subsubsection",ExpressionUUID->"90ed16b5-88cb-4b32-ab30-6dd3612ae191"],
+Cell[5861, 138, 2311, 56, 242, "Text",ExpressionUUID->"c15a9d5a-52d4-4f4d-8815-9acf1ad87275"],
+Cell[CellGroupData[{
+Cell[8197, 198, 376, 10, 37, "Input",ExpressionUUID->"65454c08-1a1b-480d-8864-570fc2adecac"],
+Cell[8576, 210, 235, 6, 42, "Output",ExpressionUUID->"6466b2ef-f748-4c74-99f2-5c5eab471b8e"]
+}, Open  ]],
+Cell[8826, 219, 310, 7, 63, "Text",ExpressionUUID->"cd3bbae0-addd-4534-9177-f25418286691"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9173, 231, 162, 3, 38, "Subsubsection",ExpressionUUID->"7f34a6e6-b2ef-45c3-a290-220c1b0cb0d8"],
+Cell[9338, 236, 376, 8, 39, "Text",ExpressionUUID->"9e433eb9-320f-4e9e-bf5c-baa3f5bf9e14"],
+Cell[9717, 246, 177, 4, 37, "Input",ExpressionUUID->"3435c479-fbb0-4dfd-895f-3c968e9ddab1"],
+Cell[9897, 252, 173, 3, 39, "Text",ExpressionUUID->"9274eaf0-7fe3-4daf-8a63-5c53204c8c3f"],
+Cell[10073, 257, 226, 5, 37, "Input",ExpressionUUID->"9d51a383-60bf-42cc-9c63-423292c08a61"],
+Cell[10302, 264, 212, 3, 39, "Text",ExpressionUUID->"c26d620f-0a71-49e9-a286-7b6ad7dd77b7"],
+Cell[10517, 269, 371, 10, 37, "Input",ExpressionUUID->"c0162814-ff6a-40fe-b9ce-d6314b3acbee"],
+Cell[10891, 281, 266, 6, 37, "Input",ExpressionUUID->"1b7fbe8f-81cb-46d0-9c1f-fc69bbdedb38",
+ CellID->16941],
+Cell[11160, 289, 482, 12, 40, "Text",ExpressionUUID->"a5014372-1c8d-4202-a3c5-a2e1b54c3ec5"],
+Cell[11645, 303, 181, 4, 37, "Input",ExpressionUUID->"24092434-a466-41ce-b38a-ea2a4c8d491e"],
+Cell[11829, 309, 278, 5, 39, "Text",ExpressionUUID->"aaa50d2a-cd29-4bc8-a71b-17789c13506d"],
+Cell[12110, 316, 210, 5, 37, "Input",ExpressionUUID->"e42818e4-cbac-4a31-ba37-85b181141443"],
+Cell[12323, 323, 293, 7, 39, "Text",ExpressionUUID->"0b05cf26-33a6-4672-befc-345460853df8"],
+Cell[12619, 332, 238, 7, 37, "Input",ExpressionUUID->"98e2bda2-ba22-4c17-b459-17e5fa66d89d"],
+Cell[12860, 341, 150, 3, 39, "Text",ExpressionUUID->"af322ac9-1385-4954-ac5f-662d6b8707c9"],
+Cell[13013, 346, 181, 4, 37, "Input",ExpressionUUID->"0ef7c8b9-8cd1-4b14-97fa-7e7a2245cade"],
+Cell[13197, 352, 165, 3, 39, "Text",ExpressionUUID->"a9e5025b-f011-4545-88b2-f6049f70078f"],
+Cell[13365, 357, 180, 4, 37, "Input",ExpressionUUID->"3900b768-6658-4c0b-8c2f-6bb7e3566825"],
+Cell[13548, 363, 315, 9, 40, "Text",ExpressionUUID->"4ee997ee-229b-4a97-a33e-71b28ea4895e"],
+Cell[13866, 374, 189, 4, 37, "Input",ExpressionUUID->"8c31cc3d-22ce-49f8-8b79-c94c68b6637f"],
+Cell[14058, 380, 299, 9, 40, "Text",ExpressionUUID->"c1744e15-9424-4256-a5b2-13653ec5fbd6"],
+Cell[14360, 391, 189, 4, 37, "Input",ExpressionUUID->"a7b17f16-defc-4af8-b6ce-34530b315f0b"],
+Cell[14552, 397, 313, 9, 40, "Text",ExpressionUUID->"5fb8a9eb-f788-40e2-95cf-fb3e9ac049c9"],
+Cell[14868, 408, 183, 4, 37, "Input",ExpressionUUID->"d83da956-85c0-4c20-bb57-d8f3969224e0"],
+Cell[15054, 414, 304, 9, 40, "Text",ExpressionUUID->"4a5d538d-ce22-4c97-b63c-25739ca424a7"],
+Cell[15361, 425, 183, 4, 37, "Input",ExpressionUUID->"1582a313-1079-462b-a14d-efbebaeef427"],
+Cell[15547, 431, 352, 8, 39, "Text",ExpressionUUID->"3629bde8-4f8c-4b02-82ad-540fe0697419"],
+Cell[15902, 441, 385, 9, 37, "Input",ExpressionUUID->"acbab22a-5f74-45f8-8f6b-41646536c448"],
+Cell[16290, 452, 340, 7, 39, "Text",ExpressionUUID->"8900ccf0-10c8-4c6a-be68-4ef47485426a"],
+Cell[16633, 461, 556, 16, 37, "Input",ExpressionUUID->"872f8c14-e93a-4ba1-99e9-345065df6f89"],
+Cell[17192, 479, 228, 4, 39, "Text",ExpressionUUID->"c37f75a2-a5bb-4a3c-9a96-ee9f0a7b2206"],
+Cell[17423, 485, 1673, 41, 116, "Input",ExpressionUUID->"0a8d299d-1a3e-47ea-a30a-7fbb1cdb9a5e"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[19133, 531, 157, 3, 38, "Subsubsection",ExpressionUUID->"066fa43c-8306-4f19-9ff1-767dbfff003f"],
+Cell[19293, 536, 705, 12, 98, "Text",ExpressionUUID->"b1a29ebf-fe5f-4ef4-b298-7a0ea0271fbf"],
+Cell[20001, 550, 303, 8, 57, "Input",ExpressionUUID->"c7467f30-c227-4294-952f-b4cc52eaad52"],
+Cell[20307, 560, 930, 21, 140, "Text",ExpressionUUID->"f70d7963-6f79-4d97-aedc-21b26f66f3b4"],
+Cell[21240, 583, 284, 5, 57, "Input",ExpressionUUID->"f9787a08-1108-43fa-b060-215909f36da2"],
+Cell[21527, 590, 439, 8, 60, "Text",ExpressionUUID->"4d0b6c45-9d62-4989-912d-d8ffd662bc64"],
+Cell[21969, 600, 365, 9, 57, "Input",ExpressionUUID->"fd9c50be-efb6-4042-956d-296ec8207179"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[22371, 614, 207, 4, 38, "Subsubsection",ExpressionUUID->"400a91c4-e24b-445a-87c4-4f6fa33efb60"],
+Cell[22581, 620, 1308, 24, 109, "Text",ExpressionUUID->"b3a67a41-a60e-4f4a-b0fb-5712d0abbd2a"],
+Cell[CellGroupData[{
+Cell[23914, 648, 392, 8, 57, "Input",ExpressionUUID->"1f9567f4-2475-4fbb-8814-2623a49c9f13"],
+Cell[24309, 658, 329, 6, 68, "Output",ExpressionUUID->"75321967-b492-46a1-9fa2-cbc548a4ebc9"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[24687, 670, 281, 4, 38, "Subsubsection",ExpressionUUID->"66cfdada-0737-4279-936d-b1ae14a458a8"],
+Cell[24971, 676, 1041, 20, 109, "Text",ExpressionUUID->"2e205182-4c9a-4e73-87e5-3fb7616d0637"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26061, 702, 356, 6, 74, "Section",ExpressionUUID->"b3b34a52-c2c9-4bd0-bf72-c573ccc37e37"],
+Cell[26420, 710, 372, 8, 39, "Text",ExpressionUUID->"85d833ea-34ff-4fd0-b2c4-a12502dddfc5"],
+Cell[CellGroupData[{
+Cell[26817, 722, 214, 4, 61, "Subsection",ExpressionUUID->"00571e6e-5a97-41fd-be1b-0b52bd61f89e"],
+Cell[27034, 728, 1138, 28, 71, "Text",ExpressionUUID->"01fdb4ca-caf9-4857-9c7c-9e7ef494ff86"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28209, 761, 305, 5, 61, "Subsection",ExpressionUUID->"499b3e97-9acb-4ce9-998b-168c3ff9f590"],
+Cell[28517, 768, 770, 12, 63, "Text",ExpressionUUID->"c5618480-d3d1-4a2e-b8bb-482ce6f8dd10"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29324, 785, 188, 3, 61, "Subsection",ExpressionUUID->"98acc623-28a8-49d7-9db7-b037bb228c73"],
+Cell[29515, 790, 802, 19, 41, "Text",ExpressionUUID->"2474e334-50be-4841-8085-28cab83b338d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30354, 814, 250, 4, 61, "Subsection",ExpressionUUID->"15e8759b-761e-4c4c-abdf-93c412dfbe55"],
+Cell[30607, 820, 616, 9, 39, "Text",ExpressionUUID->"38732133-164c-4c00-9720-16f3313d542f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31260, 834, 360, 5, 61, "Subsection",ExpressionUUID->"132b9d4c-109d-414c-a9c3-c3a177f91454"],
+Cell[31623, 841, 1372, 21, 111, "Text",ExpressionUUID->"e10c51a4-70b1-4992-a98d-11da85414118"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
